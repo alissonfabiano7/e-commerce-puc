@@ -1,5 +1,3 @@
-<?php
-
 @extends('admin.app')
 
 @section('title') {{ $pageTitle }} @endsection
@@ -10,7 +8,6 @@
             <h1><i class="fa fa-cogs"></i> {{ $pageTitle }}</h1>
         </div>
     </div>
-    @include('admin.partials.flash')
     <div class="row user">
         <div class="col-md-3">
             <div class="tile p-0">

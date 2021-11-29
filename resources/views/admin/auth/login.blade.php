@@ -19,20 +19,20 @@
     <div class="login-box">
         <form class="login-form" action="{{ route('admin.login.post') }}" method="POST" role="form">
             @csrf
-            <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>SIGN IN</h3>
+            <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>Autentique-se</h3>
             <div class="form-group">
-                <label class="control-label" for="email">Email Address</label>
+                <label class="control-label" for="email">Endereço de E-Mail</label>
                 <input class="form-control" type="email" id="email" name="email" placeholder="Email address" autofocus value="{{ old('email') }}">
             </div>
             <div class="form-group">
-                <label class="control-label" for="password">Password</label>
+                <label class="control-label" for="password">Senha</label>
                 <input class="form-control" type="password" id="password" name="password" placeholder="Password">
             </div>
             <div class="form-group">
                 <div class="utility">
                     <div class="animated-checkbox">
                         <label>
-                            <input type="checkbox" name="remember"><span class="label-text">Stay Signed in</span>
+                            <input type="checkbox" name="remember"><span class="label-text">Continue Conectado</span>
                         </label>
                     </div>
                 </div>

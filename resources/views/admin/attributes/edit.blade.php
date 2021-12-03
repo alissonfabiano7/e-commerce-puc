@@ -11,7 +11,11 @@
             <div class="tile p-0">
                 <ul class="nav flex-column nav-tabs user-tabs">
                     <li class="nav-item"><a class="nav-link active" href="#general" data-toggle="tab">Geral</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#values" data-toggle="tab">Valores dos atributos</a></li>
                 </ul>
+            </div>
+            <div class="tab-pane" id="values">
+                <attribute-values :attributeid="{{ $attribute->id }}"></attribute-values>
             </div>
         </div>
         <div class="col-md-9">
@@ -97,3 +101,6 @@
         </div>
     </div>
 @endsection
+@push('scripts')
+    <script src="{{ asset('backend/js/app.js') }}"></script>
+@endpush

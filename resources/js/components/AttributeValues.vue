@@ -75,10 +75,10 @@
                 </div>
             </div>
         </div>
+        <button class="btn btn-sm btn-primary" @click.stop="editAttributeValue(value)">
+            <i class="fa fa-edit"></i>
+        </button>
     </div>
-    <button class="btn btn-sm btn-primary" @click.stop="editAttributeValue(value)">
-        <i class="fa fa-edit"></i>
-    </button>
 </template>
 
 <script>

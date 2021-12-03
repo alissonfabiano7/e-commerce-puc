@@ -32554,7 +32554,7 @@ module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBun
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"/js, public/backend/js/app": 0,
+/******/ 			"/backend/js/app": 0,
 /******/ 			"css/app": 0
 /******/ 		};
 /******/ 		

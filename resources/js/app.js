@@ -7,6 +7,7 @@ window._ = require('lodash');
  */
 
 window.Vue = require('vue');
+import Vue from 'vue';
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

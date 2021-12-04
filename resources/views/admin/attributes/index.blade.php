@@ -8,6 +8,7 @@
         </div>
         <a href="{{ route('admin.attributes.create') }}" class="btn btn-primary pull-right">Adicionar atributo</a>
     </div>
+    @include('admin.partials.flash')
     <div class="row">
         <div class="col-md-12">
             <div class="tile">

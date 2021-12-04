@@ -6,6 +6,7 @@
             <h1><i class="fa fa-tags"></i> {{ $pageTitle }}</h1>
         </div>
     </div>
+    @include('admin.partials.flash')
     <div class="row">
         <div class="col-md-8 mx-auto">
             <div class="tile">

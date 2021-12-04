@@ -14,9 +14,6 @@
                     <li class="nav-item"><a class="nav-link" href="#values" data-toggle="tab">Valores dos atributos</a></li>
                 </ul>
             </div>
-            <div class="tab-pane" id="values">
-                <attribute-values :attributeid="{{ $attribute->id }}"></attribute-values>
-            </div>
         </div>
         <div class="col-md-9">
             <div class="tab-content">
@@ -96,6 +93,9 @@
                             </div>
                         </form>
                     </div>
+                </div>
+                <div class="tab-pane" id="values">
+                    <attribute-values :attributeid="{{ $attribute->id }}"></attribute-values>
                 </div>
             </div>
         </div>

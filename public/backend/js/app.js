@@ -2145,9 +2145,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "attribute-values",
   props: ['attributeid'],
@@ -2180,7 +2177,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     saveValue: function saveValue() {
       if (this.value === '') {
-        this.$swal("Erro, valor do atributo é necessário.", {
+        this.$swal("Erro, Valor do atributo é necessário.", {
           icon: "error"
         });
       } else {
@@ -2197,21 +2194,13 @@ __webpack_require__.r(__webpack_exports__);
 
           _this.resetValue();
 
-          _this.$swal("Successo! Valor adicionado.", {
+          _this.$swal("Successo! Valor adicionado com sucesso!", {
             icon: "success"
           });
         })["catch"](function (error) {
           console.log(error);
         });
       }
-    },
-    resetValue: function resetValue() {
-      this.value = '';
-      this.price = '';
-    },
-    reset: function reset() {
-      this.addValue = true;
-      this.resetValue();
     },
     editAttributeValue: function editAttributeValue(value) {
       this.addValue = false;
@@ -2222,7 +2211,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     updateValue: function updateValue() {
       if (this.value === '') {
-        this.$swal("Erro, valor do atributo é necessário.", {
+        this.$swal("Erro, Valor do atributo é necessário.", {
           icon: "error"
         });
       } else {
@@ -2242,7 +2231,7 @@ __webpack_require__.r(__webpack_exports__);
 
           _this.values.push(response.data);
 
-          _this.$swal("Successo! Valor atualizado.", {
+          _this.$swal("Sucesso! Valor atualizado com sucesso!", {
             icon: "success"
           });
         })["catch"](function (error) {
@@ -2255,7 +2244,7 @@ __webpack_require__.r(__webpack_exports__);
 
       this.$swal({
         title: "Você tem certeza?",
-        text: "Uma vez excluído, você não conseguirá mais acessar o valor desse atributo!",
+        text: "Uma vez excluído, você não terá mais acesso ao valor desse atributo!",
         icon: "warning",
         buttons: true,
         dangerMode: true
@@ -2272,11 +2261,11 @@ __webpack_require__.r(__webpack_exports__);
 
               _this.resetValue();
 
-              _this.$swal("Successo! O valor da opção foi excluído.", {
+              _this.$swal("Sucesso! Valor excluído com sucesso!", {
                 icon: "success"
               });
             } else {
-              _this.$swal("O valor da sua opção não foi excluído!");
+              _this.$swal("O valor do seu atributo não foi excluído!");
             }
           })["catch"](function (error) {
             console.log(error);
@@ -2285,6 +2274,14 @@ __webpack_require__.r(__webpack_exports__);
           _this2.$swal("O valor da sua opção não foi excluído!");
         }
       });
+    },
+    resetValue: function resetValue() {
+      this.value = '';
+      this.price = '';
+    },
+    reset: function reset() {
+      this.addValue = true;
+      this.resetValue();
     }
   }
 });
@@ -19787,159 +19784,153 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "" } }, [
     _c("div", { staticClass: "tile" }, [
-      _c("h3", { staticClass: "tile-title" }, [_vm._v("Valores de Opções")]),
+      _c("h3", { staticClass: "tile-title" }, [_vm._v("Valores do Atributo")]),
+      _vm._v(" "),
+      _c("hr"),
       _vm._v(" "),
       _c("div", { staticClass: "tile-body" }, [
-        _c("div", { staticClass: "tile" }, [
-          _c("h3", { staticClass: "tile-title" }, [_vm._v("Attribute Values")]),
+        _c("div", { staticClass: "form-group" }, [
+          _c(
+            "label",
+            { staticClass: "control-label", attrs: { for: "value" } },
+            [_vm._v("Valor")]
+          ),
           _vm._v(" "),
-          _c("hr"),
-          _vm._v(" "),
-          _c("div", { staticClass: "tile-body" }, [
-            _c("div", { staticClass: "form-group" }, [
-              _c(
-                "label",
-                { staticClass: "control-label", attrs: { for: "value" } },
-                [_vm._v("Value")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.value,
-                    expression: "value",
-                  },
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  placeholder: "Enter attribute value",
-                  id: "value",
-                  name: "value",
-                },
-                domProps: { value: _vm.value },
-                on: {
-                  input: function ($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.value = $event.target.value
-                  },
-                },
-              }),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c(
-                "label",
-                { staticClass: "control-label", attrs: { for: "price" } },
-                [_vm._v("Price")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.price,
-                    expression: "price",
-                  },
-                ],
-                staticClass: "form-control",
-                attrs: {
-                  type: "number",
-                  placeholder: "Enter attribute value price",
-                  id: "price",
-                  name: "price",
-                },
-                domProps: { value: _vm.price },
-                on: {
-                  input: function ($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.price = $event.target.value
-                  },
-                },
-              }),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "tile-footer" }, [
-            _c("div", { staticClass: "row d-print-none mt-2" }, [
-              _c("div", { staticClass: "col-12 text-right" }, [
-                _vm.addValue
-                  ? _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-success",
-                        attrs: { type: "submit" },
-                        on: {
-                          click: function ($event) {
-                            $event.stopPropagation()
-                            return _vm.saveValue()
-                          },
-                        },
-                      },
-                      [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-lg fa-check-circle",
-                        }),
-                        _vm._v("Save\n                            "),
-                      ]
-                    )
-                  : _vm._e(),
-                _vm._v(" "),
-                !_vm.addValue
-                  ? _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-success",
-                        attrs: { type: "submit" },
-                        on: {
-                          click: function ($event) {
-                            $event.stopPropagation()
-                            return _vm.updateValue()
-                          },
-                        },
-                      },
-                      [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-lg fa-check-circle",
-                        }),
-                        _vm._v("Update\n                            "),
-                      ]
-                    )
-                  : _vm._e(),
-                _vm._v(" "),
-                !_vm.addValue
-                  ? _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-primary",
-                        attrs: { type: "submit" },
-                        on: {
-                          click: function ($event) {
-                            $event.stopPropagation()
-                            return _vm.reset()
-                          },
-                        },
-                      },
-                      [
-                        _c("i", {
-                          staticClass: "fa fa-fw fa-lg fa-check-circle",
-                        }),
-                        _vm._v("Reset\n                            "),
-                      ]
-                    )
-                  : _vm._e(),
-              ]),
-            ]),
-          ]),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.value,
+                expression: "value",
+              },
+            ],
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              placeholder: "Insira o valor do atributo",
+              id: "value",
+              name: "value",
+            },
+            domProps: { value: _vm.value },
+            on: {
+              input: function ($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.value = $event.target.value
+              },
+            },
+          }),
         ]),
         _vm._v(" "),
+        _c("div", { staticClass: "form-group" }, [
+          _c(
+            "label",
+            { staticClass: "control-label", attrs: { for: "price" } },
+            [_vm._v("Preço")]
+          ),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.price,
+                expression: "price",
+              },
+            ],
+            staticClass: "form-control",
+            attrs: {
+              type: "number",
+              placeholder: "Insira o preço do atributo",
+              id: "price",
+              name: "price",
+            },
+            domProps: { value: _vm.price },
+            on: {
+              input: function ($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.price = $event.target.value
+              },
+            },
+          }),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "tile-footer" }, [
+        _c("div", { staticClass: "row d-print-none mt-2" }, [
+          _c("div", { staticClass: "col-12 text-right" }, [
+            _vm.addValue
+              ? _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-success",
+                    attrs: { type: "submit" },
+                    on: {
+                      click: function ($event) {
+                        $event.stopPropagation()
+                        return _vm.saveValue()
+                      },
+                    },
+                  },
+                  [
+                    _c("i", { staticClass: "fa fa-fw fa-lg fa-check-circle" }),
+                    _vm._v("Salvar\n                    "),
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            !_vm.addValue
+              ? _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-success",
+                    attrs: { type: "submit" },
+                    on: {
+                      click: function ($event) {
+                        $event.stopPropagation()
+                        return _vm.updateValue()
+                      },
+                    },
+                  },
+                  [
+                    _c("i", { staticClass: "fa fa-fw fa-lg fa-check-circle" }),
+                    _vm._v("Atualizar\n                    "),
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            !_vm.addValue
+              ? _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-primary",
+                    attrs: { type: "submit" },
+                    on: {
+                      click: function ($event) {
+                        $event.stopPropagation()
+                        return _vm.reset()
+                      },
+                    },
+                  },
+                  [
+                    _c("i", { staticClass: "fa fa-fw fa-lg fa-check-circle" }),
+                    _vm._v("Resetar\n                    "),
+                  ]
+                )
+              : _vm._e(),
+          ]),
+        ]),
+      ]),
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "tile" }, [
+      _c("h3", { staticClass: "tile-title" }, [_vm._v("Valores das Opções")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "tile-body" }, [
         _c("div", { staticClass: "table-responsive" }, [
           _c("table", { staticClass: "table table-sm" }, [
             _vm._m(0),
@@ -19975,7 +19966,42 @@ var render = function () {
                     [_vm._v(_vm._s(value.price))]
                   ),
                   _vm._v(" "),
-                  _vm._m(1, true),
+                  _c(
+                    "td",
+                    {
+                      staticClass: "text-center",
+                      staticStyle: { width: "25%" },
+                    },
+                    [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-sm btn-primary",
+                          on: {
+                            click: function ($event) {
+                              $event.stopPropagation()
+                              return _vm.editAttributeValue(value)
+                            },
+                          },
+                        },
+                        [_c("i", { staticClass: "fa fa-edit" })]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-sm btn-danger",
+                          on: {
+                            click: function ($event) {
+                              $event.stopPropagation()
+                              return _vm.deleteAttributeValue(value)
+                            },
+                          },
+                        },
+                        [_c("i", { staticClass: "fa fa-trash" })]
+                      ),
+                    ]
+                  ),
                 ])
               }),
               0
@@ -19984,20 +20010,6 @@ var render = function () {
         ]),
       ]),
     ]),
-    _vm._v(" "),
-    _c(
-      "button",
-      {
-        staticClass: "btn btn-sm btn-primary",
-        on: {
-          click: function ($event) {
-            $event.stopPropagation()
-            return _vm.editAttributeValue(_vm.value)
-          },
-        },
-      },
-      [_c("i", { staticClass: "fa fa-edit" })]
-    ),
   ])
 }
 var staticRenderFns = [
@@ -20016,24 +20028,6 @@ var staticRenderFns = [
         _c("th", [_vm._v("Ação")]),
       ]),
     ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "td",
-      { staticClass: "text-center", staticStyle: { width: "25%" } },
-      [
-        _c("button", { staticClass: "btn btn-sm btn-primary" }, [
-          _c("i", { staticClass: "fa fa-edit" }),
-        ]),
-        _vm._v(" "),
-        _c("button", { staticClass: "btn btn-sm btn-danger" }, [
-          _c("i", { staticClass: "fa fa-trash" }),
-        ]),
-      ]
-    )
   },
 ]
 render._withStripped = true

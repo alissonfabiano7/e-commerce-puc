@@ -51,6 +51,6 @@ class SettingController extends BaseController
                 Setting::set($key, $value);
             }
         }
-        return $this->responseRedirectBack('Settings updated successfully.', 'success');
+        return $this->responseRedirectBack('Configurações alteradas com sucesso.', 'success');
     }
 }

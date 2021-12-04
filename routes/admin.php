@@ -64,6 +64,17 @@ Route::group(['prefix'  =>  'admin'], function () {
         Route::post('images/upload', 'App\Http\Controllers\Admin\ProductImageController@upload')->name('admin.products.images.upload');
         Route::get('images/{id}/delete', 'App\Http\Controllers\Admin\ProductImageController@delete')->name('admin.products.images.delete');
 
+        // Carrega os atributos quando a página carrega
+        Route::get('attributes/load', 'App\Http\Controllers\Admin\ProductAttributeController@loadAttributes');
+        // Carrega os atributos dos produtos quando a página carrega
+        Route::post('attributes', 'App\Http\Controllers\Admin\ProductAttributeController@productAttributes');
+        // Carrega opções de valores quando a página carrega
+        Route::post('attributes/values', 'App\Http\Controllers\Admin\ProductAttributeController@loadValues');
+        // Adiciona o atributo do produto a um atributo
+        Route::post('attributes/add', 'App\Http\Controllers\Admin\ProductAttributeController@addAttribute');
+        // Exclui o atributo de um algum produto
+        Route::post('attributes/delete', 'App\Http\Controllers\Admin\ProductAttributeController@deleteAttribute');
+
     });
 
 });

@@ -45,4 +45,10 @@ interface CategoryContract
      */
     public function treeList();
 
+    /**
+    * @param $slug
+    * @return mixed
+    */
+    public function findBySlug($slug);
+
 }

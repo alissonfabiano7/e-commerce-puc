@@ -24,3 +24,4 @@ Route::get('/category/{slug}', 'App\Http\Controllers\Site\CategoryController@sho
 
 Route::get('/product/{slug}', 'App\Http\Controllers\Site\ProductController@show')->name('product.show');
 
+Route::post('/product/add/cart', 'App\Http\Controllers\Site\ProductController@addToCart')->name('product.add.cart');

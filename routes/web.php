@@ -29,3 +29,8 @@ Route::post('/product/add/cart', 'App\Http\Controllers\Site\ProductController@ad
 Route::get('/cart', 'App\Http\Controllers\Site\CartController@getCart')->name('checkout.cart');
 Route::get('/cart/item/{id}/remove', 'App\Http\Controllers\Site\CartController@removeItem')->name('checkout.cart.remove');
 Route::get('/cart/clear', 'App\Http\Controllers\Site\CartController@clearCart')->name('checkout.cart.clear');
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/checkout', 'Site\CheckoutController@getCheckout')->name('checkout.index');
+    Route::post('/checkout/order', 'Site\CheckoutController@placeOrder')->name('checkout.place.order');
+});

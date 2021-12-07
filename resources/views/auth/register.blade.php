@@ -76,7 +76,7 @@
                                     <label for="country">Estado</label>
                                     <select id="country" class="form-control" name="country">
                                         <option> Selecione...</option>
-                                        <option value="United Kingdom">Brasil</option>
+                                        <option value="Brazil">Brasil</option>
                                     </select>
                                 </div>
                             </div>

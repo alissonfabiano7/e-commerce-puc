@@ -66,7 +66,7 @@
                     @endif
                 </main>
                 <aside class="col-sm-3">
-                    <a href="{{ route('checkout.cart.clear') }}" class="btn btn-danger btn-block mb-4">Clear Cart</a>
+                    <a href="{{ route('checkout.cart.clear') }}" class="btn btn-danger btn-block mb-4">Limpar carrinho</a>
                     <p class="alert alert-success">Adicione 5 reais de itens elegíveis para sua ordem para se qualificar para o frete grátis. </p>
                     <dl class="dlist-align h4">
                         <dt>Total:</dt>
@@ -86,7 +86,7 @@
                             <br> Blá blá blá
                         </div>
                     </figure>
-                    <a href="#" class="btn btn-success btn-lg btn-block">Prosseguir para o checkout</a>
+                    <a href="{{ route('checkout.index') }}" class="btn btn-success btn-lg btn-block">Prosseguir para o checkout</a>
                 </aside>
             </div>
         </div>

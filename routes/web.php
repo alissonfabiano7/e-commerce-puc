@@ -31,6 +31,6 @@ Route::get('/cart/item/{id}/remove', 'App\Http\Controllers\Site\CartController@r
 Route::get('/cart/clear', 'App\Http\Controllers\Site\CartController@clearCart')->name('checkout.cart.clear');
 
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/checkout', 'Site\CheckoutController@getCheckout')->name('checkout.index');
-    Route::post('/checkout/order', 'Site\CheckoutController@placeOrder')->name('checkout.place.order');
+    Route::get('/checkout', 'App\Http\Controllers\Site\CheckoutController@getCheckout')->name('checkout.index');
+    Route::post('/checkout/order', 'App\Http\Controllers\Site\CheckoutController@placeOrder')->name('checkout.place.order');
 });

@@ -20,5 +20,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/category/{slug}', 'Site\CategoryController@show')->name('category.show');
+Route::get('/category/{slug}', 'App\Http\Controllers\Site\CategoryController@show')->name('category.show');
+
+Route::get('/product/{slug}', 'App\Http\Controllers\Site\ProductController@show')->name('product.show');
 

@@ -26,5 +26,9 @@ class ProductController extends Controller
         return view('site.pages.product', compact('product', 'attributes'));
     }
 
+    public function addToCart(Request $request)
+    {
+        dd($request->all());
+    }
 
 }

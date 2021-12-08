@@ -68,6 +68,7 @@
                 "zeroRecords": "Nenhum registro encontrado, desculpe",
                 "info": "Mostrando página _PAGE_ de _PAGES_",
                 "infoEmpty": "Nenhum registro disponível",
+                "search": "Buscar",
                 "infoFiltered": "(Filtrado de _MAX_ total de registros)",
                 "paginate": {
                     "previous": "Anterior",

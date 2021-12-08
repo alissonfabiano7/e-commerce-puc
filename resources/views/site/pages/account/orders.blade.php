@@ -1,5 +1,5 @@
 @extends('site.app')
-@section('title', 'Orders')
+@section('title', 'Ordens')
 @section('content')
     <section class="section-pagetop bg-dark">
         <div class="container clearfix">
@@ -31,7 +31,9 @@
                                 <td>{{ $order->last_name }}</td>
                                 <td>{{ config('settings.currency_symbol') }}{{ round($order->grand_total, 2) }}</td>
                                 <td>{{ $order->item_count }}</td>
-                                <td><span class="badge badge-success">{{ strtoupper($order->status) }}</span></td>
+                                @if ($order->status == 'pending')
+                                    <td><span class="badge badge-success">PENDENTE</span></td>
+                                @endif
                             </tr>
                         @empty
                             <div class="col-sm-12">

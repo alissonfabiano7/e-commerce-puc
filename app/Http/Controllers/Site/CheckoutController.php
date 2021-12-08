@@ -23,7 +23,5 @@ class CheckoutController extends Controller
     public function placeOrder(Request $request)
     {
         $order = $this->orderRepository->storeOrderDetails($request->all());
-
-        dd($order);
     }
 }

@@ -32,7 +32,7 @@ class ProductController extends BaseController
     {
         $products = $this->productRepository->listProducts();
 
-        $this->setPageTitle('Products', 'Products List');
+        $this->setPageTitle('Produtos', 'Listagem de produtos');
         return view('admin.products.index', compact('products'));
     }
 
@@ -41,7 +41,7 @@ class ProductController extends BaseController
         $brands = $this->brandRepository->listBrands('name', 'asc');
         $categories = $this->categoryRepository->listCategories('name', 'asc');
 
-        $this->setPageTitle('Products', 'Create Product');
+        $this->setPageTitle('Produtos', 'Criar produto');
         return view('admin.products.create', compact('categories', 'brands'));
     }
 
@@ -52,9 +52,9 @@ class ProductController extends BaseController
         $product = $this->productRepository->createProduct($params);
 
         if (!$product) {
-            return $this->responseRedirectBack('Error occurred while creating product.', 'error', true, true);
+            return $this->responseRedirectBack('Um erro ocorreu enquanto se criava um produto.', 'error', true, true);
         }
-        return $this->responseRedirect('admin.products.index', 'Product added successfully' ,'success',false, false);
+        return $this->responseRedirect('admin.products.index', 'Produto adicionado com sucesso' ,'success',false, false);
     }
 
     public function edit($id)
@@ -63,7 +63,7 @@ class ProductController extends BaseController
         $brands = $this->brandRepository->listBrands('name', 'asc');
         $categories = $this->categoryRepository->listCategories('name', 'asc');
 
-        $this->setPageTitle('Products', 'Edit Product');
+        $this->setPageTitle('Produtos', 'Editar produtos');
         return view('admin.products.edit', compact('categories', 'brands', 'product'));
     }
 
@@ -74,8 +74,8 @@ class ProductController extends BaseController
         $product = $this->productRepository->updateProduct($params);
 
         if (!$product) {
-            return $this->responseRedirectBack('Error occurred while updating product.', 'error', true, true);
+            return $this->responseRedirectBack('Um erro ocorreu enquanto se atualizava um produto.', 'error', true, true);
         }
-        return $this->responseRedirect('admin.products.index', 'Product updated successfully' ,'success',false, false);
+        return $this->responseRedirect('admin.products.index', 'Produto atualizado com sucesso' ,'success',false, false);
     }
 }

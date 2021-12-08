@@ -14,7 +14,7 @@ class ProductAttribute extends Model
     /**
      * @var array
      */
-    protected $fillable = ['product_id', 'quantity', 'price'];
+    protected $fillable = ['attribute_id', 'product_id', 'quantity', 'value', 'price'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo

@@ -49,11 +49,10 @@ class ProductAttributeController extends Controller
     public function addAttribute(Request $request)
     {
         $productAttribute = ProductAttribute::create($request->data);
-
         if ($productAttribute) {
-            return response()->json(['message' => 'Product attribute added successfully.']);
+            return response()->json(['message' => 'Atributo de produto adicionado com sucesso.']);
         } else {
-            return response()->json(['message' => 'Something went wrong while submitting product attribute.']);
+            return response()->json(['message' => 'Algo deu errado ao submeter o atributo do produto']);
         }
     }
 

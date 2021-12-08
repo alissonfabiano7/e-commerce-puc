@@ -197,7 +197,7 @@
                 </div>
                 <div class="tab-pane" id="images">
                     <div class="tile">
-                        <h3 class="tile-title">Careggar imagem</h3>
+                        <h3 class="tile-title">Carregar imagem</h3>
                         <hr>
                         <div class="tile-body">
                             <div class="row">

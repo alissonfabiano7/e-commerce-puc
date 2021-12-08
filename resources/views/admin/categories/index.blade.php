@@ -43,9 +43,9 @@
                                     </td>
                                     <td class="text-center">
                                         @if ($category->menu == 1)
-                                            <span class="badge badge-success">Yes</span>
+                                            <span class="badge badge-success">Sim</span>
                                         @else
-                                            <span class="badge badge-danger">No</span>
+                                            <span class="badge badge-danger">Não</span>
                                         @endif
                                     </td>
                                     <td class="text-center">

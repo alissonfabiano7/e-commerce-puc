@@ -22,7 +22,7 @@
                     </ul>
                 </aside>
                 <aside class="col-sm-3  col-md-3 white">
-                    <h5 class="title">About</h5>
+                    <h5 class="title">Sobre</h5>
                     <ul class="list-unstyled">
                         <li> <a href="#"> Nossa história </a></li>
                         <li> <a href="#"> Como comprar </a></li>
@@ -41,14 +41,26 @@
                         </p>
 
                         <div class="btn-group white">
-                            <a class="btn btn-facebook" title="Facebook" target="_blank" href="#"><i
-                                    class="fab fa-facebook-f  fa-fw"></i></a>
-                            <a class="btn btn-instagram" title="Instagram" target="_blank" href="#"><i
-                                    class="fab fa-instagram  fa-fw"></i></a>
-                            <a class="btn btn-youtube" title="Youtube" target="_blank" href="#"><i
-                                    class="fab fa-youtube  fa-fw"></i></a>
-                            <a class="btn btn-twitter" title="Twitter" target="_blank" href="#"><i
-                                    class="fab fa-twitter  fa-fw"></i></a>
+                            @if (config('settings.social_facebook') != null)
+                                <a class="btn btn-facebook" title="Facebook" target="_blank" href="#"><i
+                                        class="fab fa-facebook-f  fa-fw"></i>
+                                </a>
+                            @endif
+                            @if (config('settings.social_instagram') != null)
+                                <a class="btn btn-instagram" title="Instagram" target="_blank" href="#"><i
+                                        class="fab fa-instagram  fa-fw"></i>
+                                </a>
+                            @endif
+                            @if (config('settings.social_Youtube') != null)
+                                <a class="btn btn-youtube" title="Youtube" target="_blank" href="#"><i
+                                        class="fab fa-youtube  fa-fw"></i>
+                                </a>
+                            @endif
+                            @if (config('settings.social_twitter') != null)
+                                <a class="btn btn-twitter" title="Twitter" target="_blank" href="#"><i
+                                        class="fab fa-twitter  fa-fw"></i>
+                                </a>
+                            @endif
                         </div>
                     </article>
                 </aside>

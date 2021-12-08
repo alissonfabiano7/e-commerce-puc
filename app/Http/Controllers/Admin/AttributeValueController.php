@@ -29,7 +29,7 @@ class AttributeValueController extends Controller
     public function addValues(Request $request)
     {
         $value = new AttributeValue();
-        $value->attribute_id = $request->input('id');
+        $value->attribute_id = $request->input('attribute_id');
         $value->value = $request->input('value');
         $value->price = $request->input('price');
         $value->save();

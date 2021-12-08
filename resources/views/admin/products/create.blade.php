@@ -155,7 +155,7 @@
                                                    type="checkbox"
                                                    id="status"
                                                    name="status"
-                                                />Ativo?
+                                                />Ativo
                                         </label>
                                     </div>
                                 </div>

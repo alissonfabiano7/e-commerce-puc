@@ -46,7 +46,7 @@
                                     <dl class="row">
                                         <dt class="col-sm-3">SKU</dt>
                                         <dd class="col-sm-9">{{ $product->sku }}</dd>
-                                        <dt class="col-sm-3">Weight</dt>
+                                        <dt class="col-sm-3">Peso</dt>
                                         <dd class="col-sm-9">{{ $product->weight }}</dd>
                                     </dl>
                                     <div class="mb-3">
@@ -73,7 +73,7 @@
                                                             <dt>{{ $attribute->name }}: </dt>
                                                             <dd>
                                                                 <select class="form-control form-control-sm option" style="width:180px;" name="{{ strtolower($attribute->name ) }}">
-                                                                    <option data-price="0" value="0"> Select a {{ $attribute->name }}</option>
+                                                                    <option data-price="0" value="0"> Selecione {{ $attribute->name }}</option>
                                                                     @foreach($product->attributes as $attributeValue)
                                                                         @if ($attributeValue->attribute_id == $attribute->id)
                                                                             <option
@@ -93,7 +93,7 @@
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <dl class="dlist-inline">
-                                                    <dt>Quantity: </dt>
+                                                    <dt>Quantidade: </dt>
                                                     <dd>
                                                         <input class="form-control" type="number" min="1" value="1" max="{{ $product->quantity }}" name="qty" style="width:70px;">
                                                         <input type="hidden" name="productId" value="{{ $product->id }}">
@@ -103,7 +103,7 @@
                                             </div>
                                         </div>
                                         <hr>
-                                        <button type="submit" class="btn btn-success"><i class="fas fa-shopping-cart"></i> Add To Cart</button>
+                                        <button type="submit" class="btn btn-success"><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
                                     </form>
                                 </article>
                             </aside>
@@ -127,7 +127,7 @@
             $('#addToCart').submit(function (e) {
                 if ($('.option').val() == 0) {
                     e.preventDefault();
-                    alert('Please select an option');
+                    alert('Por favor selecione uma opção');
                 }
             });
             $('.option').change(function () {

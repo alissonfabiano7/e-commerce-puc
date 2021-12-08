@@ -167,7 +167,7 @@
                                                    id="status"
                                                    name="status"
                                                    {{ $product->status == 1 ? 'checked' : '' }}
-                                                />Status
+                                                />Ativo
                                         </label>
                                     </div>
                                 </div>
@@ -179,7 +179,7 @@
                                                    id="featured"
                                                    name="featured"
                                                    {{ $product->featured == 1 ? 'checked' : '' }}
-                                                />Featured
+                                                />Destaque
                                         </label>
                                     </div>
                                 </div>

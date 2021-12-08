@@ -155,7 +155,7 @@
                                                    type="checkbox"
                                                    id="status"
                                                    name="status"
-                                                />Status
+                                                />Ativo?
                                         </label>
                                     </div>
                                 </div>
@@ -166,7 +166,7 @@
                                                    type="checkbox"
                                                    id="featured"
                                                    name="featured"
-                                                />Featured
+                                                />Destacado
                                         </label>
                                     </div>
                                 </div>

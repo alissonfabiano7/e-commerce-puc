@@ -1,4 +1,10 @@
 {
+    "name": "e-commerce-puc",
+    "description": "TCC Puc Minas",
+    "version": "1.0.0",
+    "engines": {
+        "node": "14.17.6"
+    },
     "private": true,
     "scripts": {
         "dev": "npm run development",

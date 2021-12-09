@@ -7,7 +7,8 @@
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "mix watch --hot",
         "prod": "npm run production",
-        "production": "mix --production"
+        "production": "mix --production",
+        "postinstall": "npm run development"
     },
     "devDependencies": {
         "axios": "^0.21",
@@ -24,8 +25,8 @@
         "vue-loader": "^15.9.8",
         "vue-swal": "^0.1.0",
         "vue-template-compiler": "^2.6.12"
+        "dropzone": "^6.0.0-beta.2"
     },
     "dependencies": {
-        "dropzone": "^6.0.0-beta.2"
     }
 }

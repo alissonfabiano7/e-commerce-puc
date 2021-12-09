@@ -26,7 +26,7 @@
         "vue": "^2.6.12",
         "vue-loader": "^15.9.8",
         "vue-swal": "^0.1.0",
-        "vue-template-compiler": "^2.6.12"
+        "vue-template-compiler": "^2.6.12",
         "dropzone": "^6.0.0-beta.2"
     }
 }

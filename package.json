@@ -1,16 +1,18 @@
 {
     "private": true,
     "scripts": {
+        "postinstall": "npm run development",
         "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
         "prod": "npm run production",
-        "production": "mix --production",
-        "postinstall": "npm run development"
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
+        "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production"
     },
-    "devDependencies": {
+    "dependencies": {
         "axios": "^0.21",
         "bootstrap": "^4.6.0",
         "jquery": "^3.6",
@@ -26,7 +28,5 @@
         "vue-swal": "^0.1.0",
         "vue-template-compiler": "^2.6.12"
         "dropzone": "^6.0.0-beta.2"
-    },
-    "dependencies": {
     }
 }

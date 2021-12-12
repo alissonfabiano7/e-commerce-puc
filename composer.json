@@ -16,7 +16,7 @@
         "laravel/socialite": "^5.2",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
-        "league/flysystem-aws-s3-v3": "1.0",
+        "league/flysystem-aws-s3-v3": "1.0.29",
         "typicms/nestablecollection": "^1.1"
     },
     "require-dev": {

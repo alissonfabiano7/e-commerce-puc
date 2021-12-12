@@ -6,7 +6,7 @@
                     <div class="brand-wrap">
                         <a href="{{ url('/') }}">
                             @if (config('settings.site_logo') != null)
-                                <img src="{{ asset('storage/'.config('settings.site_logo')) }}" id="logoImg" style="width: 80px; height: auto;">
+                                <img src="{{ config('settings.site_logo') }}" id="logoImg" style="width: 80px; height: auto;">
                             @else
                                 <img src="https://via.placeholder.com/80x80?text=Placeholder+Image" id="logoImg" style="width: 80px; height: auto;">
                             @endif

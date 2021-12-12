@@ -1,5 +1,5 @@
 @if (config('settings.site_logo') != null)
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('storage/'.config('settings.site_logo')) }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ config('settings.site_logo') }}">
 @else
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/images/favicon.ico') }}">
 @endif

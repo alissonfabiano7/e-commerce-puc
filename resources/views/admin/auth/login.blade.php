@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="form-group btn-container">
-                <button class="btn btn-primary btn-block" type="submit"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
+                <button class="btn btn-primary btn-block" type="submit"><i class="fa fa-sign-in fa-lg fa-fw"></i>Entrar</button>
             </div>
         </form>
     </div>

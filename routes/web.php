@@ -1,12 +1,12 @@
 <?php
 
-header('Access-Control-Allow-Origin:  *');
-header('Access-Control-Allow-Methods:  POST, GET, OPTIONS, PUT, PATCH, DELETE');
-header('Access-Control-Allow-Headers: Accept, Content-Type, X-Auth-Token, Origin, Authorization');
-
 require 'admin.php';
 
 use Illuminate\Support\Facades\Route;
+
+header('Access-Control-Allow-Origin:  *');
+header('Access-Control-Allow-Methods:  POST, GET, OPTIONS, PUT, PATCH, DELETE');
+header('Access-Control-Allow-Headers: Accept, Content-Type, X-Auth-Token, Origin, Authorization');
 
 /*
 |--------------------------------------------------------------------------
@@ -19,12 +19,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::view('/', 'site.pages.homepage');
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
-
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/category/{slug}', 'App\Http\Controllers\Site\CategoryController@show')->name('category.show');
 

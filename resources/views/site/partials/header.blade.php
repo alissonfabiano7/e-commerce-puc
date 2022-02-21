@@ -49,6 +49,12 @@
                                     <div class="text-wrap"><span>Registrar</span></div>
                                 </a>
                             </div>
+                            <div class="widget-header">
+                                <a href="{{ route('admin.dashboard') }}" class="ml-3 icontext">
+                                    <div class="icon-wrap icon-xs bg-success round text-white"><i class="fa fa-user"></i></div>
+                                    <div class="text-wrap"><span>Administrador</span></div>
+                                </a>
+                            </div>
                         @else
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item dropdown">

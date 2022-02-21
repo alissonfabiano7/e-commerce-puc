@@ -8,6 +8,9 @@
     </section>
     <section class="section-content bg padding-y border-top">
         <div class="container">
+            @if (Session::has('message'))
+                <p class="alert alert-success">{{ Session::get('message') }}</p>
+            @endif
             <div class="row">
             </div>
             <div class="row">

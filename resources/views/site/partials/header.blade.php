@@ -38,7 +38,7 @@
                                 </a>
                             </div>
                         @else
-                            <ul class="navbar-nav ml-auto">
+                            <ul class="navbar-nav ml-3">
                                 <li class="nav-item dropdown">
                                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                         {{ Auth::user()->full_name }} <span class="caret"></span>

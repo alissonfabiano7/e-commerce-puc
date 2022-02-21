@@ -17,9 +17,6 @@ class CartController extends Controller
     {
         Cart::remove($id);
 
-        if (Cart::isEmpty()) {
-            return redirect('/');
-        }
         return redirect()->back()->with('message', 'Item removido do carrinho com sucesso');
     }
 

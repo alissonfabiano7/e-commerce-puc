@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Site;
 
+use Cart;
 use Illuminate\Http\Request;
 use App\Contracts\OrderContract;
 use App\Http\Controllers\Controller;
@@ -22,6 +23,10 @@ class CheckoutController extends Controller
 
     public function placeOrder(Request $request)
     {
-        $order = $this->orderRepository->storeOrderDetails($request->all());
+        $this->orderRepository->storeOrderDetails($request->all());
+
+        Cart::clear();
+
+        return redirect()->route('account.orders')->with('message', 'Ordem criada com sucesso');;
     }
 }

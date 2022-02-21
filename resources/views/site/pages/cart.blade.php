@@ -24,7 +24,7 @@
                             <table class="table table-hover shopping-cart-wrap">
                                 <thead class="text-muted">
                                 <tr>
-                                    <th scope="col">Product</th>
+                                    <th scope="col">Produto</th>
                                     <th scope="col" width="120">Quantidade</th>
                                     <th scope="col" width="120">Preço</th>
                                     <th scope="col" class="text-right" width="200">Ação</th>

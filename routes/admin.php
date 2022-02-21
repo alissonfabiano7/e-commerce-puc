@@ -82,6 +82,14 @@ Route::group(['prefix'  =>  'admin'], function () {
         Route::get('/{order}/show', 'App\Http\Controllers\Admin\OrderController@show')->name('admin.orders.show');
     });
 
+    Route::group(['prefix' => 'charts'], function () {
+        Route::get('/newUsers', 'App\Http\Controllers\Admin\ChartsController@newUsers')->name('admin.charts.newUsers');
+        Route::get('/newOrders', 'App\Http\Controllers\Admin\ChartsController@newOrders')->name('admin.charts.newOrders');
+        Route::get('/newProducts', 'App\Http\Controllers\Admin\ChartsController@newProducts')->name('admin.charts.newProducts');
+        Route::get('/productsPerCategory', 'App\Http\Controllers\Admin\ChartsController@productsPerCategory')->name('admin.charts.productsPerCategory');
+        Route::get('/productsPerBrand', 'App\Http\Controllers\Admin\ChartsController@productsPerBrand')->name('admin.charts.productsPerBrand');
+    });
+
 });
 
 

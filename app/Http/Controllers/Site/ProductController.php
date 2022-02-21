@@ -34,7 +34,7 @@ class ProductController extends Controller
 
         Cart::add(uniqid(), $product->name, $request->input('price'), $request->input('qty'), $options);
 
-        return redirect()->back()->with('message', 'Item adicionado ao carrinho com sucesso.');
+        return redirect()->route('checkout.cart')->with('message', 'Item adicionado ao carrinho com sucesso.');
     }
 
 }

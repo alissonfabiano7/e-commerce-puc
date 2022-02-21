@@ -13,18 +13,6 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6">
-                    <form action="#" class="search-wrap">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Procurar">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="submit">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="widgets-wrap d-flex justify-content-end">
                         <div class="widget-header">
@@ -41,12 +29,6 @@
                                 <a href="{{ route('login') }}" class="ml-3 icontext">
                                     <div class="icon-wrap icon-xs bg-primary round text-white"><i class="fa fa-user"></i></div>
                                     <div class="text-wrap"><span>Login</span></div>
-                                </a>
-                            </div>
-                            <div class="widget-header">
-                                <a href="{{ route('register') }}" class="ml-3 icontext">
-                                    <div class="icon-wrap icon-xs bg-success round text-white"><i class="fa fa-user"></i></div>
-                                    <div class="text-wrap"><span>Registrar</span></div>
                                 </a>
                             </div>
                             <div class="widget-header">

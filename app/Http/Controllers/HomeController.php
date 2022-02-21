@@ -7,13 +7,11 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
     public function index()
     {
+        header('Access-Control-Allow-Origin:  *');
+        header('Access-Control-Allow-Methods:  POST, GET, OPTIONS, PUT, PATCH, DELETE');
+        header('Access-Control-Allow-Headers: Accept, Content-Type, X-Auth-Token, Origin, Authorization');
         $featuredProducts = Product::where('featured', 1)->paginate(12);
         return view('site.pages.homepage', compact('featuredProducts'));
     }

@@ -13,7 +13,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-8 col-sm-6">
                     <div class="widgets-wrap d-flex justify-content-end">
                         <div class="widget-header">
                             <a href="{{ route('checkout.cart') }}" class="icontext">

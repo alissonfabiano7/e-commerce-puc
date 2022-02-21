@@ -1,36 +1,7 @@
-<!-- ========================= FOOTER ========================= -->
 <footer class="section-footer bg-dark white">
     <div class="container">
         <section class="footer-top padding-top">
             <div class="row">
-                <aside class="col-sm-3 col-md-3 white">
-                    <h5 class="title">Serviços para o cliente</h5>
-                    <ul class="list-unstyled">
-                        <li> <a href="#">Centro de ajuda</a></li>
-                        <li> <a href="#">Reembolsos</a></li>
-                        <li> <a href="#">Termos e políticas</a></li>
-                    </ul>
-                </aside>
-                <aside class="col-sm-3  col-md-3 white">
-                    <h5 class="title">Minha conta</h5>
-                    <ul class="list-unstyled">
-                        <li> <a href="#"> Login </a></li>
-                        <li> <a href="#"> Registre-se </a></li>
-                        <li> <a href="#"> Configurações da Conta </a></li>
-                        <li> <a href="#"> Minhas ordens </a></li>
-                        <li> <a href="#"> Minha lista de desejos </a></li>
-                    </ul>
-                </aside>
-                <aside class="col-sm-3  col-md-3 white">
-                    <h5 class="title">Sobre</h5>
-                    <ul class="list-unstyled">
-                        <li> <a href="#"> Nossa história </a></li>
-                        <li> <a href="#"> Como comprar </a></li>
-                        <li> <a href="#"> Entrega e pagamento </a></li>
-                        <li> <a href="#"> Propagandas </a></li>
-                        <li> <a href="#"> Parceria </a></li>
-                    </ul>
-                </aside>
                 <aside class="col-sm-3">
                     <article class="white">
                         <h5 class="title">Contatos</h5>
@@ -84,4 +55,3 @@
     </div>
     <!-- //container -->
 </footer>
-<!-- ========================= FOOTER END // ========================= -->

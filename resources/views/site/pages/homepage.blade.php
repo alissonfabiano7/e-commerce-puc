@@ -2,8 +2,8 @@
 @section('title', 'Homepage')
 
 @section('content')
-    <h2>Produtos em destaque</h2>
-    <section class="section-content bg padding-y">
+    <h2 class="p-3">Produtos em destaque</h2>
+    <section class="section-content bg">
         <div class="container">
             <div id="code_prod_complex">
                 <div class="row">

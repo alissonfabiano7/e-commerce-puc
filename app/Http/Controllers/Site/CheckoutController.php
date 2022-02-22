@@ -23,6 +23,17 @@ class CheckoutController extends Controller
 
     public function placeOrder(Request $request)
     {
+        $this->validate($request, [
+            'first_name'      =>  'required',
+            'last_name'     =>  'required',
+            'address'      =>  'required',
+            'city'      =>  'required',
+            'country'      =>  'required',
+            'post_code'      =>  'required',
+            'phone_number'      =>  'required',
+
+        ]);
+
         $this->orderRepository->storeOrderDetails($request->all());
 
         Cart::clear();

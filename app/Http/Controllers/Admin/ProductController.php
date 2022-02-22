@@ -78,4 +78,15 @@ class ProductController extends BaseController
         }
         return $this->responseRedirect('admin.products.index', 'Produto atualizado com sucesso' ,'success',false, false);
     }
+
+    public function delete($id)
+    {
+        $product = $this->productRepository->deleteProduct($id);
+
+        if (!$product) {
+            return $this->responseRedirectBack('Um erro ocorreu enquanto se excluía um produto', 'error', true, true);
+        }
+        return $this->responseRedirect('admin.products.index', 'Produto excluíd com sucesso' ,'success',false, false);
+    }
+
 }

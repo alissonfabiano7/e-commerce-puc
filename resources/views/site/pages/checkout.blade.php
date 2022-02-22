@@ -28,34 +28,41 @@
                                     <div class="col form-group">
                                         <label>Nome</label>
                                         <input type="text" class="form-control" name="first_name">
+                                        @error('first_name') {{ $message }} @enderror
                                     </div>
                                     <div class="col form-group">
                                         <label>Sobrenome</label>
                                         <input type="text" class="form-control" name="last_name">
+                                        @error('last_name') {{ $message }} @enderror
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Endereço</label>
                                     <input type="text" class="form-control" name="address">
+                                    @error('address') {{ $message }} @enderror
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label>Cidade</label>
                                         <input type="text" class="form-control" name="city">
+                                        @error('city') {{ $message }} @enderror
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>País</label>
                                         <input type="text" class="form-control" name="country">
+                                        @error('country') {{ $message }} @enderror
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group  col-md-6">
                                         <label>CEP</label>
                                         <input type="text" class="form-control" name="post_code">
+                                        @error('post_code') {{ $message }} @enderror
                                     </div>
                                     <div class="form-group  col-md-6">
                                         <label>Número de telefone</label>
                                         <input type="text" class="form-control" name="phone_number">
+                                        @error('phone_number') {{ $message }} @enderror
                                     </div>
                                 </div>
                                 <div class="form-group">

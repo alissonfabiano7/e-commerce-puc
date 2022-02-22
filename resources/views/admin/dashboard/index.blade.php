@@ -6,43 +6,45 @@
             <h1><i class="fa fa-dashboard"></i> Dashboard</h1>
         </div>
     </div>
-    <div class="col-md-6">
-        <div class="tile">
-            <h3 class="tile-title">Novos usuários dos últimos 7 dias</h3>
-            <div class="embed-responsive embed-responsive-16by9">
-                <canvas class="embed-responsive-item" id="newUsers"></canvas>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="tile">
+                <h3 class="tile-title">Novos usuários dos últimos 7 dias</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <canvas class="embed-responsive-item" id="newUsers"></canvas>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-6">
-        <div class="tile">
-            <h3 class="tile-title">Novas ordens dos últimos 7 dias</h3>
-            <div class="embed-responsive embed-responsive-16by9">
-                <canvas class="embed-responsive-item" id="newOrders"></canvas>
+        <div class="col-md-6">
+            <div class="tile">
+                <h3 class="tile-title">Novas ordens dos últimos 7 dias</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <canvas class="embed-responsive-item" id="newOrders"></canvas>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-6">
-        <div class="tile">
-            <h3 class="tile-title">Novos produtos dos últimos 7 dias</h3>
-            <div class="embed-responsive embed-responsive-16by9">
-                <canvas class="embed-responsive-item" id="newProducts"></canvas>
+        <div class="col-md-6">
+            <div class="tile">
+                <h3 class="tile-title">Novos produtos dos últimos 7 dias</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <canvas class="embed-responsive-item" id="newProducts"></canvas>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-6">
-        <div class="tile">
-            <h3 class="tile-title">Produtos por marca</h3>
-            <div class="embed-responsive embed-responsive-16by9">
-                <canvas class="embed-responsive-item" id="productsPerBrand"></canvas>
+        <div class="col-md-6">
+            <div class="tile">
+                <h3 class="tile-title">Produtos por marca</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <canvas class="embed-responsive-item" id="productsPerBrand"></canvas>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-6">
-        <div class="tile">
-            <h3 class="tile-title">Produtos por categoria</h3>
-            <div class="embed-responsive embed-responsive-16by9">
-                <canvas class="embed-responsive-item" id="productsPerCategory"></canvas>
+        <div class="col-md-6">
+            <div class="tile">
+                <h3 class="tile-title">Produtos por categoria</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <canvas class="embed-responsive-item" id="productsPerCategory"></canvas>
+                </div>
             </div>
         </div>
     </div>

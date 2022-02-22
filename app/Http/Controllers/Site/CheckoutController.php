@@ -27,8 +27,6 @@ class CheckoutController extends Controller
 
         Cart::clear();
 
-        $orders = auth()->user()->orders;
-
-        return view('site.pages.account.orders', compact('orders'));
+        return redirect()->route('account.orders')->with('message', 'Ordem criada com sucesso');
     }
 }

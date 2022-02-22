@@ -20,7 +20,7 @@ class ChartsController
             $diffInDays = $now->diffInDays(Carbon::create($user->created_at)->format('Y-m-d'));
             $userArray[$diffInDays]++;
         }
-        return array_reverse($userArray);
+        return $userArray;
 
     }
 
@@ -33,7 +33,7 @@ class ChartsController
             $diffInDays = $now->diffInDays(Carbon::create($user->created_at)->format('Y-m-d'));
             $userArray[$diffInDays]++;
         }
-        return array_reverse($userArray);
+        return $userArray;
 
     }
 
@@ -46,7 +46,7 @@ class ChartsController
             $diffInDays = $now->diffInDays(Carbon::create($user->created_at)->format('Y-m-d'));
             $userArray[$diffInDays]++;
         }
-        return array_reverse($userArray);
+        return $userArray;
 
     }
 
